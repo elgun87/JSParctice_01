@@ -5,8 +5,7 @@ Task: Write a function countVowels that takes a string as an argument and return
 
 function countVowels(str) {
   let vowels = "aeiouAEIOU";
-  let count = str.split("").filter((el) => vowels.includes(el));
-  return count.length;
+  return str.split("").filter((el) => vowels.includes(el)).length;
 }
 console.log(countVowels("javascript"));
 let vowels = "aeiouAEIOU";
